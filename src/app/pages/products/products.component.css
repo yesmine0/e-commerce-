@@ -1,0 +1,234 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+
+  
+  .navbar {
+    height: 80px; /* Augmente la hauteur de la navbar */
+    background-color: #1776d5; /* Choisissez la couleur de fond de la navbar */
+    transition: background-color 0.3s ease; /* Ajoute une animation de transition pour le changement de couleur */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  
+  .navbar-nav .nav-link {
+    color: rgb(52, 163, 52) !important; /* Définit la couleur des liens */
+    font-weight: bold;
+    padding: 15px 20px; /* Espacement autour du texte */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animation lors du survol */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: rgb(41, 118, 41) !important; /* Change la couleur au survol */
+    transform: scale(1.1); /* Ajoute une petite animation de zoom sur le lien */
+  }
+  
+  .navbar-brand img {
+    height: 40px; /* Augmente la taille du logo */
+    transition: transform 0.3s ease; /* Animation du logo */
+  }
+  
+  .navbar-brand:hover img {
+    transform: scale(1.1); /* Zoom sur le logo au survol */
+  }
+  
+
+/* Section globale */
+.products-section {
+  text-align: center; /* Centre le titre */
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Ajout d'une couleur de fond légère */
+}
+
+/* Titre "Our Products" */
+.products-section h2 {
+  font-size: 2.5rem; /* Taille légèrement plus grande */
+  font-weight: 700; /* Texte bien en gras */
+  margin-bottom: 30px;
+  color: #1d8d06; /* Couleur verte */
+  text-transform: uppercase; /* Maintient les majuscules */
+  letter-spacing: 1.5px; /* Espacement entre les lettres */
+  font-family: 'Times New Roman', Times, serif; /* Style moderne et épuré */
+  text-align: center; /* Centrage horizontal */
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto; /* Centrer le bloc dans son conteneur */
+  background: linear-gradient(90deg, #1d8d06, #4caf50, #8bc34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Dégradé appliqué au texte */
+  animation: gradient-text 3s infinite alternate; /* Animation */
+}
+/* Animation pour le dégradé du texte */
+@keyframes gradient-text {
+  0% {
+      background-position: 0%;
+  }
+  100% {
+      background-position: 100%;
+  }
+}
+.products-section h2::after{
+  content: "";
+  display: block;
+  margin: 10px auto 0;
+  width: 70px; /* Largeur de la ligne */
+  height: 4px;
+  background-color: #1d8d06;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+.products-section h2:hover::after{
+  width: 100px; /* Agrandissement au survol */
+  background-color: #4caf50; /* Change légèrement la couleur */
+
+
+}
+
+
+/* Container des produits */
+.products-container {
+  display: flex; /* Flexbox pour centrer */
+  flex-wrap: wrap; /* Permet un retour à la ligne */
+  justify-content: center; /* Centre les cartes horizontalement */
+  gap: 20px; /* Espacement entre les cartes */
+  padding: 20px;
+}
+
+/* Carte produit */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  width: 280px; /* Taille fixe pour chaque carte */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image du produit */
+.product-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Nom du produit */
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Prix du produit */
+.product-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1d8d06;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Bouton acheter */
+.buy-button {
+  background: linear-gradient(to right, #1d8d06, #42b72a); /* Gradient */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+  background: linear-gradient(to right, #42b72a, #1d8d06); /* Inverse gradient */
+  transform: translateY(-3px); /* Légère élévation */
+}
+
+.buy-button:active {
+  transform: translateY(1px); /* Réduction au clic */
+}
+
+
+/* Footer styles */
+.footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1d8d06; /* Green to match the theme */
+  margin-bottom: 20px;
+}
+
+.footer p, .footer a {
+  font-size: 0.9rem;
+  color: #d3d3d3;
+}
+
+.footer a:hover {
+  color: #1d8d06; /* Hover effect */
+  text-decoration: none;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Social media links */
+.social-link {
+  font-size: 1.5rem;
+  color: #d3d3d3;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #1d8d06; /* Green theme */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-title {
+      text-align: center;
+  }
+
+  .footer-links {
+      text-align: center;
+  }
+}

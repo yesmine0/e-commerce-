@@ -1,0 +1,228 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+  
+    
+    .navbar {
+      height: 80px; /* Augmente la hauteur de la navbar */
+      background-color: #1776d5; /* Choisissez la couleur de fond de la navbar */
+      transition: background-color 0.3s ease; /* Ajoute une animation de transition pour le changement de couleur */
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  
+    }
+    
+    .navbar-nav .nav-link {
+      color: rgb(52, 163, 52) !important; /* Définit la couleur des liens */
+      font-weight: bold;
+      padding: 15px 20px; /* Espacement autour du texte */
+      transition: color 0.3s ease, transform 0.3s ease; /* Animation lors du survol */
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  
+    }
+    
+    .navbar-nav .nav-link:hover {
+      color: rgb(41, 118, 41) !important; /* Change la couleur au survol */
+      transform: scale(1.1); /* Ajoute une petite animation de zoom sur le lien */
+    }
+    
+    .navbar-brand img {
+      height: 40px; /* Augmente la taille du logo */
+      transition: transform 0.3s ease; /* Animation du logo */
+    }
+    
+    .navbar-brand:hover img {
+      transform: scale(1.1); /* Zoom sur le logo au survol */
+    }
+
+
+
+
+
+    /* Conteneur général */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #1d8d06, #42b72a);
+    animation: fadeIn 1s ease-in;
+    padding: 20px;
+  }
+  
+  /* Carte Sign Up */
+  .signup-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+    border: 2px solid rgba(29, 141, 6, 0.1);
+  }
+  
+  /* Titre */
+  .signup-card h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1d8d06;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Groupe de formulaire */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Étiquette */
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Champs d'entrée */
+  .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Champs au focus */
+  .form-group input:focus {
+    border-color: #1d8d06;
+    box-shadow: 0 4px 8px rgba(29, 141, 6, 0.2);
+    background: #fff;
+  }
+  
+  /* Bouton Sign Up */
+  .signup-button {
+    background: linear-gradient(to right, #1d8d06, #42b72a);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .signup-button:hover {
+    background: linear-gradient(to right, #42b72a, #1d8d06);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(29, 141, 6, 0.2);
+  }
+  
+  .signup-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Lien toggle */
+  .signup-toggle {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .signup-toggle a {
+    color: #1d8d06;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-toggle a:hover {
+    text-decoration: underline;
+    color: #42b72a;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+/* Footer styles */
+.footer {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1d8d06; /* Green to match the theme */
+    margin-bottom: 20px;
+  }
+  
+  .footer p, .footer a {
+    font-size: 0.9rem;
+    color: #d3d3d3;
+  }
+  
+  .footer a:hover {
+    color: #1d8d06; /* Hover effect */
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #d3d3d3;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social media links */
+  .social-link {
+    font-size: 1.5rem;
+    color: #d3d3d3;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    color: #1d8d06; /* Green theme */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-title {
+        text-align: center;
+    }
+  
+    .footer-links {
+        text-align: center;
+    }
+  }
+  
